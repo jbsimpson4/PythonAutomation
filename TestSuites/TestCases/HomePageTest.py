@@ -18,10 +18,6 @@ class HomePage(unittest.TestCase):
     def test_search_box(self):
         # check search box exists on Home page
         self.assertTrue(self.is_element_present(By.NAME, "q"))
-
-    def test_language_settings(self):
-        # check language options on Home page
-        self.assertTrue(self.is_element_present(By.ID,"_eEe"))
     
     def test_images_link(self):
         # check images link on Home page
