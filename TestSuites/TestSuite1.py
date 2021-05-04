@@ -1,14 +1,14 @@
 import unittest
 import HtmlTestRunner
 import os
-from TestCases import SearchText
+from TestCases import SearchTest
 from TestCases import HomePageTest
 
 # get the directory path to output report file
 dir = os.getcwd()
 
 # get all tests from SearchText and HomePageTest class
-search_text = unittest.TestLoader().loadTestsFromTestCase(SearchText.Search)
+search_text = unittest.TestLoader().loadTestsFromTestCase(SearchTest.Search)
 home_page_test = unittest.TestLoader().loadTestsFromTestCase(HomePageTest.HomePage)
 
 # create a test suite combining search_text and home_page_test
